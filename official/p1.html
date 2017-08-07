@@ -2,22 +2,22 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  
+
   <!--[if lt IE 9]>
   <script src="../lib/html5shim.js"></script>
-  <![endif]-->  
-  
+  <![endif]-->
+
   <!-- These are some core styles the slideshow app requires -->
   <link rel="stylesheet" href="../lib/styles.css" />
-  
+
   <!-- These are the styles you'll add to make the slides look great -->
   <link rel="stylesheet" href="css/styles.css" />
-  
-  <title>Example Slideshow</title>
+
+  <title>A Basic Git Workflow in Gitlab</title>
 </head>
 <body>
   <header>
-    <h1>Example Slide Show</h1>
+    <h1>A Basic Git Workflow in Gitlab</h1>
     <nav>
       <ul>
         <li><button id="prev-btn" title="Previous slide">Previous Slide</button></li>
@@ -27,101 +27,92 @@
     </nav>
   </header>
   <div id="deck">
-    
     <!-- Begin slides -->
     <section>
       <hgroup>
-        <h1>Hello, interwebs explorer.</h1>
-        <h2>How to use this thing</h2>
+        <h1>A Brief History of Git</h1>
+        <h2>The Master Mind</h2>
       </hgroup>
-      <p>Press the right arrow, down arrow, or spacebar to advance; press the left arrow or up arrow to move backward.</p>
-  		<p>You can also click the left and right arrows in the control bar at the top.</p>
+      <img class="action" height="600" width="1200" src="https://lh3.googleusercontent.com/-aC-iH_xS5tY/VSPsVXBWbmI/AAAAAAAANVI/Al9MkYz8VQY/w1930-h1090/git-fork-you.jpg">
     </section>
     <section>
       <hgroup>
-        <h1>Intraslide animation</h1>
-        <h2>I'm calling these "actions"</h2>
+      <div>
+        <h1>Linus Quotes</h1>
+        <img height="600" width="1000" src="images/p1/linus-quotes.png" alt="Linus Quotes" />
+      </div>
       </hgroup>
-        <p>You can hide/reveal content within the slides by giving something a class of "action". Actions are revealed in the order in which they occur in the HTML. Advancing to the next slide will first reveal actions on the page if they exist.</p>
-  	  <pre>
-&lt;p class=&quot;action&quot;&gt;This will be hidden when the slide loads&lt;/p&gt;
-  	  </pre>	
-      <ul>
-        <li class="action">Bullet point</li>
-        <li class="action">Another bullet point</li>
-        <li class="action">Yet another bullet point</li>
-        <li class="action">You get the idea</li>
-      </ul>
     </section>
     <section>
       <hgroup>
-        <h1>Custom events</h1>
-        <h2>These may or may not be useful for you</h2>
+      <div>
+        <h1>Do you have a development log history?  </h1>
+        <img height="600" width="1000" src="https://s-media-cache-ak0.pinimg.com/originals/bc/a0/17/bca0174adfb70991f2ee476a493cc4fa.jpg"></img>
+      </div>
       </hgroup>
-      <p>When a new slide is loaded, a "newSlide" event is fired. (Take a look at your console.)</p>
-  		<p>There's also an event triggered when a new "action" is revealed.</p>
-  		<pre>
-//Example usage
-$(&#x27;html&#x27;).bind(&#x27;newSlide&#x27;, function(e,id) { console.log(id) });
-  		</pre>
     </section>
-  	<section>
-      <hgroup>
-        <h1>Building slides</h1>
-        <h2>It's easy</h2>
-      </hgroup>
-      <p>Each slide goes within a <code>section</code> element, like this:</p>
-  		<pre>
-&lt;section&gt;
-    &lt;hgroup&gt;
-        &lt;h1&gt;Your heading&lt;/h1&gt;
-        &lt;h2&gt;Your subheading&lt;/h2&gt;
-    &lt;/hgroup&gt;
-    &lt;p&gt;All your slide content...&lt;/p&gt;
-&lt;/section&gt;
-  		</pre>
-  	  <p>You don't have to worry about numbering the slides. The script will count the number of <code>section</code> elements and give each one a numbered ID on page load.</p>
-    </section>
-  	<section>
-      <hgroup>
-        <h1>Plays well with images</h1>
-      </hgroup>
-
-      <img src="images/best-stegosaurus.png" alt="The Best Dinosaur" />
-      
-    </section>    
     <section>
       <hgroup>
-        <h1>Other details</h1>
-        <h2>Small stuff</h2>
+      <div>
+        <h1>Do you have a development log history?  </h1>
+        <img height="600" width="1000" src="images/p1/git-log-example.png"></img>
+      </div>
       </hgroup>
-  		<p>The hash updates with each slide.</p>
-  		<p>The slideshow itself has 3 dependencies: jQuery, htmlSlides.js, and a small stylesheet.</p>
-  		<p>The slide script has one option, the option to hide the toolbar at the top:</p>
-  		<pre>
-htmlSlides.init({ toolbar: true });
-  		</pre>
     </section>
-  	<section>
+    <section>
       <hgroup>
-        <h1>That's all</h1>
+        <h1>How do you resolve merge conflicts?</h1>
       </hgroup>
-      <p>Get it at <a href="http://github.com/robflaherty/html-slideshow">github</a>.</p>
-      <p>- Rob Flaherty / <a href="http://twitter.com/robflaherty">@robflaherty</a> / <a href="mailto:rob@ravelrumba.com">rob@ravelrumba.com</a></p>
+      <div class="action">
+        <img src="images/p1/drunken-master.gif" alt="drunken-master-fight" />
+        <br /> <br /> <br /> <br /> <br />
+        <h1 class="center action">
+          <a href="https://gitlab.com/dopeteam/knoxx-backend-services/issues/20#note_34452314">Click here for Internal Usage</a>
+        </h1>
+      </div>
+    </section>
+    <section>
+      <hgroup>
+        <h1>Practice Time</h1>
+      </hgroup>
+      <div>
+        <img src="http://binsbox.com/images/practice-makes-perfect-believes-bruce-lee/practice-makes-perfect-believes-bruce-lee0.jpg" alt="drunken-master-fight" />
+        <br /> <br /> <br /> <br /> <br />
+      </div>
+    </section>
+    <section>
+      <hgroup>
+        <h1>Fasten your black belt...</h1>
+      </hgroup>
+      <div>
+          <script src="https://gist.github.com/hoangdangninh/4d10362b70850e90d27d4b3450f2461d.js"></script>
+      </div>
+    </section>
+    <section>
+      <hgroup>
+        <h1></h1>
+      </hgroup>
+      <div>
+          <img src="https://i.ytimg.com/vi/EJn2a1W8Z6c/hqdefault.jpg" alt="" />
+          <a href="https://github.com/hoangdangninh/html-slideshow"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
+      </div>
     </section>
     <!-- /End slides -->
-    
+
   </div>
+  <footer>
+    <small>&copy; Copyleft 2017, Hoang Dang</small>
+  </footer>
   <!-- /deck -->
   <script src="../lib/jquery-1.5.2.min.js"></script>
-  <script src="../lib/jquery.jswipe-0.1.2.js"></script>  
+  <script src="../lib/jquery.jswipe-0.1.2.js"></script>
   <script src="../lib/htmlSlides.js"></script>
   <script>
     //Do our business when the DOM is ready for us
     $(function() {
-      
+
       //You can trigger Javascript based on the slide number like this:
-      $('html').bind('newSlide', function(e, id) { 
+      $('html').bind('newSlide', function(e, id) {
         switch(id) {
           case 2:
             console.log('This is the second slide.');;
@@ -134,8 +125,9 @@ htmlSlides.init({ toolbar: true });
 
       //One little option: hideToolbar (boolean; default = false)
       htmlSlides.init({ hideToolbar: true });
-      
+
     });
   </script>
   </body>
+
 </html>
