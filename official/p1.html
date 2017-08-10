@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+
+  <!--[if lt IE 9]>
+  <script src="../lib/html5shim.js"></script>
+  <![endif]-->
+
+  <!-- These are some core styles the slideshow app requires -->
+  <link rel="stylesheet" href="../lib/styles.css" />
+
+  <!-- These are the styles you'll add to make the slides look great -->
+  <link rel="stylesheet" href="css/styles.css" />
+
+  <title>A Basic Git Workflow in Gitlab</title>
+</head>
+<body>
+  <header>
+    <h1>A Basic Git Workflow in Gitlab</h1>
+    <nav>
+      <ul>
+        <li><button id="prev-btn" title="Previous slide">Previous Slide</button></li>
+        <li><span id="slide-number"></span>/<span id="slide-total"></span></li>
+        <li><button id="next-btn" title="Next Slide">Next Slide</button></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="deck">
+    <!-- Begin slides -->
+    <section>
+      <hgroup>
+        <h1>A Brief History of Git</h1>
+        <h2>The Master Mind</h2>
+      </hgroup>
+      <img class="action" height="600" width="1200" src="https://lh3.googleusercontent.com/-aC-iH_xS5tY/VSPsVXBWbmI/AAAAAAAANVI/Al9MkYz8VQY/w1930-h1090/git-fork-you.jpg">
+    </section>
+    <section>
+      <hgroup>
+      <div>
+        <h1>Linus Quotes</h1>
+        <img height="600" width="1000" src="images/p1/linus-quotes.png" alt="Linus Quotes" />
+      </div>
+      </hgroup>
+    </section>
+    <section>
+      <hgroup>
+      <div>
+        <h1>Do you have a development log history?  </h1>
+        <img height="600" width="1000" src="https://s-media-cache-ak0.pinimg.com/originals/bc/a0/17/bca0174adfb70991f2ee476a493cc4fa.jpg"></img>
+      </div>
+      </hgroup>
+    </section>
+    <section>
+      <hgroup>
+      <div>
+        <h1>Do you have a development log history?  </h1>
+        <img height="600" width="1000" src="images/p1/git-log-example.png"></img>
+      </div>
+      </hgroup>
+    </section>
+    <section>
+      <hgroup>
+        <h1>How do you resolve merge conflicts?</h1>
+      </hgroup>
+      <div class="action">
+        <img src="images/p1/drunken-master.gif" alt="drunken-master-fight" />
+        <br /> <br /> <br /> <br /> <br />
+        <h1 class="center action">
+          <a href="https://gitlab.com/dopeteam/knoxx-backend-services/issues/20#note_34452314">Click here for Internal Usage</a>
+        </h1>
+      </div>
+    </section>
+    <section>
+      <hgroup>
+        <h1>Practice Time</h1>
+      </hgroup>
+      <div>
+        <img src="http://binsbox.com/images/practice-makes-perfect-believes-bruce-lee/practice-makes-perfect-believes-bruce-lee0.jpg" alt="drunken-master-fight" />
+        <br /> <br /> <br /> <br /> <br />
+      </div>
+    </section>
+    <section>
+      <hgroup>
+        <h1>Fasten your seat belt...</h1>
+      </hgroup>
+      <div>
+          <script src="https://gist.github.com/hoangdangninh/4d10362b70850e90d27d4b3450f2461d.js"></script>
+      </div>
+    </section>
+    <section>
+      <hgroup>
+        <h1></h1>
+      </hgroup>
+      <div>
+          <img src="https://i.ytimg.com/vi/EJn2a1W8Z6c/hqdefault.jpg" alt="" />
+          <a href="https://github.com/hoangdangninh/html-slideshow"><img style="position: absolute; top: 0; left: 0; border: 0;" src="https://camo.githubusercontent.com/82b228a3648bf44fc1163ef44c62fcc60081495e/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f6c6566745f7265645f6161303030302e706e67" alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png"></a>
+      </div>
+    </section>
+    <!-- /End slides -->
+
+  </div>
+  <footer>
+    <small>&copy; Copyleft 2017, Hoang Dang</small>
+  </footer>
+  <!-- /deck -->
+  <script src="../lib/jquery-1.5.2.min.js"></script>
+  <script src="../lib/jquery.jswipe-0.1.2.js"></script>
+  <script src="../lib/htmlSlides.js"></script>
+  <script>
+    //Do our business when the DOM is ready for us
+    $(function() {
+
+      //You can trigger Javascript based on the slide number like this:
+      $('html').bind('newSlide', function(e, id) {
+        switch(id) {
+          case 2:
+            console.log('This is the second slide.');;
+            break;
+          case 3:
+            console.log('Hello, third slide.');
+            break;
+        }
+      });
+
+      //One little option: hideToolbar (boolean; default = false)
+      htmlSlides.init({ hideToolbar: true });
+
+    });
+  </script>
+  </body>
+
+</html>
